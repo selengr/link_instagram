@@ -22,17 +22,18 @@
 
 .landing-div-rounded {
     display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 100%;
-    
- 
-
-
     width: 124px;
     height: 124px;
     border-radius: 50%;
     box-shadow: 4px 4px 24px 0 rgba(0,0,0,.21);
     margin-top: -62px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .landing-title {
