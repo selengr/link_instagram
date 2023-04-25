@@ -15,7 +15,15 @@ const Banner = () => {
                 className={styles["landing-img"]}
                 />
 
-                <div className={styles["landing-div-rounded"]}>dshf</div>
+                <>
+                <Image
+                  src={"/images/fikeus-west-2.avif"}
+                  alt="Picture of the author"
+                  width={0}
+                  height={0}
+                  className={styles["landing-div-rounded"]}
+                />
+                </>
 
                 <h1 className={styles["landing-title"]}>commercial web</h1>
 
