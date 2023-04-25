@@ -1,0 +1,51 @@
+
+.landing-main {
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -42px;
+}
+.landing-img {
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    object-position: center 50%;
+    width: 92vw !important;
+    max-width: 1200px!important;
+    border-radius: 24px;
+    height: 30vh !important;
+}
+
+.landing-div-rounded {
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    
+ 
+
+
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 24px 0 rgba(0,0,0,.21);
+    margin-top: -62px;
+}
+
+.landing-title {
+    width: 100%;
+    font-size: 2.5em;
+    margin-top: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+.landing-page-content-inner {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    margin-top: 20px;
+    line-height: 2.65rem;
+}
