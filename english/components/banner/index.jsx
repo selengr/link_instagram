@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/components/banner/banner.module.css"
+import Bio from "./bio";
 
 const Banner = () => {
     return (
@@ -14,6 +15,14 @@ const Banner = () => {
                 />
 
                 <div className={styles["landing-div-rounded"]}>dshf</div>
+
+                <h1 className={styles["landing-title"]}>commercial web</h1>
+
+
+                <article >
+                  <Bio />
+               </article>
+
         </div>
     );
 }

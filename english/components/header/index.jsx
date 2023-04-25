@@ -1,6 +1,4 @@
 import styles from "../../styles/components/header/header.module.css"
-import Bio from "../banner/bio";
-
 
 const Header = () => {
     return (
@@ -10,9 +8,7 @@ ddd
             </div>
 
 
-            <article className={styles[""]}>
-                <Bio />
-            </article>
+           
         </>
     );
 }
