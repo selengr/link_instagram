@@ -7,6 +7,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --bg-color: #2f3437;
+
+  --fn-arial-1 : Arialn.ttf;
+  --fn-arial-2 : ArialTh.ttf;
+  --fn-arial-3 : ARIBL0.ttf;
+  --fn-arial-4 : G_ari_bd.TTF;
+  --fn-arial-5 : G_ari_i.TTF;
+  --fn-arial-6 : GEO_AI__.TTF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +23,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+@font-face {
+  font-family: arial;
+  src: url("/fonts/Arialn.ttf");
+  font-weight: 900;
+}
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--bg-color)
+  background: var(--bg-color);  
+}
+
+*{
+  font-family: sans-serif;
 }

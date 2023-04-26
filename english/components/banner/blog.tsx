@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/components/banner/banner.module.css";
+import App from "../../pages/_app";
 
 const Blog = () => {
   let data = [
@@ -25,6 +26,25 @@ const Blog = () => {
                   width={0}
                   height={0}
                 />
+
+                <section className={styles["post-blog-property"]}>
+                  <span className={styles["post-blog-property-title"]}>
+                    Example article
+                  </span>
+                  <div className={styles["post-blog-property-details"]}>
+                    <span className={styles["post-blog-property-description"]}>
+                      The best techniques for sharing code snippets and
+                      screencasts that will help propel your open source
+                      projects to success.
+                    </span>
+                    <span className={styles["post-blog-property-date"]}>
+                      Mar 7, 2018
+                    </span>
+                  </div>
+                  <div className={styles["post-blog-property-map-opt"]}>
+                    {[1111, 2222222, 23, 584, 888888885].map((it) => <><span>{it}</span></>)}
+                  </div>
+                </section>
               </div>
             </>
           );
