@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/components/banner/banner.module.css"
-import Bio from "./bio";
-import Post from "./post";
+
 
 const Banner = () => {
     return (
@@ -28,10 +27,7 @@ const Banner = () => {
                 <h1 className={styles["landing-title"]}>commercial web</h1>
 
 
-                <article className={styles["landing-article"]}>
-                  <Bio />
-                  <Post />
-               </article>
+                
 
         </div>
     );
