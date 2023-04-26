@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../../styles/components/banner/banner.module.css"
 import Bio from "./bio";
-import Blog from "./blog";
+import Post from "./post";
 
 const Banner = () => {
     return (
@@ -30,7 +30,7 @@ const Banner = () => {
 
                 <article className={styles["landing-article"]}>
                   <Bio />
-                  <Blog />
+                  <Post />
                </article>
 
         </div>

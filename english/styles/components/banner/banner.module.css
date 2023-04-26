@@ -14,7 +14,7 @@
     border: none;
     margin: auto;
     object-position: center 50%;
-    width: 92vw !important;
+    width: 100vw !important;
     max-width: 1200px!important;
     border-radius: 24px;
     height: 30vh !important;
@@ -61,9 +61,10 @@
 .landing-title {
     width: 100%;
     font-size: 2.5em;
-    margin-top: 20px;
+    margin-top: 1em;
     line-height: 1.2;
     text-align: center;
+    font-weight: bold;
 }
 .landing-article {
     display: flex;
@@ -238,7 +239,6 @@
     display: flex;
     align-items: center;
     padding: 0 6px;
-    
     border-radius: 3px;
     height: 18px;
     white-space: nowrap;
