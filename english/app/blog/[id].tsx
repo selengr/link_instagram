@@ -1,9 +1,9 @@
-import Banner from "@/components/banner";
+
 
 const BlogDetails = () => {
     return (
         <div>
-            eafsgrtfjhtrthj
+             eafsgrtfjhtrthj
             <h1>eljfgefgk;fgk;;;;;;</h1>
             <h1>eljfgefgk;fgk;;;;;;</h1>
             <h1>eljfgefgk;fgk;;;;;;</h1>
