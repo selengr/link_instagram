@@ -7,10 +7,13 @@ import styles from "../styles/components/banner/banner.module.css"
 
 
 export default function Page() {
+  
+
   return (
     <>
 
     <div className="w-100 flex justify-center align-middle">
+      
       <article className={styles["landing-article"]}>
               <Bio />
               <Post />

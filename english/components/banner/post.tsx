@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const Post = () => {
   let data = [
-    { images: "/images/fikeus-west-2.avif", slug: 1 },
-    { images: "/images/fikeus-west-2.avif", slug: 2 },
-    { images: "/images/fikeus-west-2.avif", slug: 3 },
-    { images: "/images/fikeus-west-2.avif", slug: 4 },
-    { images: "/images/fikeus-west-2.avif", slug: 5 },
-    { images: "/images/fikeus-west-2.avif", slug: 6 },
+    { images: "/images/fikeus-west-2.avif", slug: 1,name:"1nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 2,name:"2nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 3,name:"3nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 4,name:"4nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 5,name:"5nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 6,name:"6nop" },
   ];
   return (
     <div className={styles["post-header"]}>
@@ -21,8 +21,9 @@ const Post = () => {
             <>
               <Link
                 href="/blog/[id]/page"
-                as={`/blog/${it.slug}`}
+                as={`/blog/${it.slug}?query=${it.images}&${it.name}`}
                 className={styles["post-blog-each-card"]}
+                key={Math.floor(Math.random()*1000)}
               >
                 <Image
                   src={it.images}
