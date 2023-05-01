@@ -20,8 +20,8 @@ const Post = () => {
           return (
             <>
               <Link
-                href="/blog/[id]/page"
-                as={`/blog/${it.slug}?query=${it.images}&${it.name}`}
+                href={`/blog/${it.slug}?query=${it.images}&${it.name}`}
+                // as={`/blog/${it.slug}?query=${it.images}&${it.name}`}
                 className={styles["post-blog-each-card"]}
                 key={Math.floor(Math.random()*1000)}
               >

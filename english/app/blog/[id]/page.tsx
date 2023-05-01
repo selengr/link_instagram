@@ -2,15 +2,18 @@
 
 import Introduction from '@/components/blog/introduction'
 import styles from "../../../styles/components/blog/blog.module.css"
-import { useParams } from 'next/navigation'
-import { useSearchParams } from 'next/navigation'
+import { useParams,useSearchParams } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import MainIdea from '../../../components/blog/mainIdea';
 
 const Post = () => {
  const param = useParams()
- const router = useSearchParams()
+ const userouter = useRouter()
+ const {values,getAll,keys} = useSearchParams()
+ const {concat} = usePathname()
  console.log('router :>> ', param);
- console.log('router =================== :>> ', router);
+//  console.log('router =================== :>> ', router);
+ debugger
 
   return (
     <>
