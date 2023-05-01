@@ -1,5 +1,6 @@
 import Banner from "@/components/banner";
 import Header from "@/components/header";
+import "../styles/globals.css";
 
 
 export default function Layout({ children }) {
@@ -8,7 +9,7 @@ export default function Layout({ children }) {
       <head>
         <title>Next.js</title>
       </head>
-      <body>
+      <body style={{background:"red"}}>
            <Header />
            <Banner />
            {children}

@@ -1,3 +1,5 @@
+
+
 import Bio from "@/components/banner/bio";
 import "../styles/globals.css";
 import Post from "@/components/banner/post";
