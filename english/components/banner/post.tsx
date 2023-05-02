@@ -1,6 +1,9 @@
+'use client'
+
 import Image from "next/image";
 import styles from "../../styles/components/banner/banner.module.css";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Post = () => {
   let data = [
@@ -11,6 +14,18 @@ const Post = () => {
     { images: "/images/fikeus-west-2.avif", slug: 5,name:"5nop" },
     { images: "/images/fikeus-west-2.avif", slug: 6,name:"6nop" },
   ];
+
+useEffect(()=>{
+  fetch('http://localhost:8000/api/post/all')
+  .then((res) => res.json())
+  .then((d) => {
+    console.log(d)
+    debugger
+  })
+
+},[])
+
+
   return (
     <div className={styles["post-header"]}>
       <h2>Blog Posts</h2>
