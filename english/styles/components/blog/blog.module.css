@@ -142,7 +142,7 @@
         padding: 6px 0;
         --notion-max-width: 720px;
         --notion-header-height: 54px;
-        color: hsla(0,0%,100%,.9);
+        /*color: hsla(0,0%,100%,.9);*/
         padding: 0;
         margin: 0;
         border-radius: 0;
@@ -156,7 +156,7 @@
         line-height: 1.65;
         --notion-max-width: 720px;
         --notion-header-height: 54px;
-        color: hsla(0,0%,100%,.9);
+        /*color: hsla(0,0%,100%,.9);*/
         padding: 0;
         margin: 0;
         border-radius: 0;
@@ -164,5 +164,13 @@
         font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Noto Sans",sans-serif;
         font-style: italic !important;
     }
+
+    .costum-blog-quote {
+        padding: 0.2em 0.75em;
+        line-height: 1.5;
+        font-style: italic;
+        font-size: 1.2em;
+        border-left: 4px solid #67bdfc;
+    }
+
     .costum-blog-h1 {}
-    

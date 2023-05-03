@@ -7,11 +7,20 @@ const MainIdea = () => {
         Everything I wish I,d known before starting Saasify 2 years ago.
       </span>
 
+
+
       <div className="h-16" />
 
       <h1 className={styles["costum-blog-h1"]}>Intro</h1>
-
       <div className="h-4" />
+
+
+        <div className={styles["costum-blog-quote"]}>
+            Several months ago, we started a company…Last week, we launched our first product…Tomorrow, we’ll be taking over your news feed
+            <span>…</span>
+        </div>
+
+        <div className="h-6" />
 
       <span className={styles["costum-blog-span"]}>
         I started working on Saasify two years ago with one clear goal in mind:
