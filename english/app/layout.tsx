@@ -2,6 +2,7 @@
 
 import Banner from "@/components/banner";
 import Header from "@/components/header";
+import Footer from "./../components/footer";
 // import '../styles/tailwind.css'
 import { useState } from "react";
 import "../styles/globals.css";
@@ -56,6 +57,8 @@ export default function Layout({ children }) {
         <Header />
         <Banner />
         {children}
+
+        <Footer />
       </body>
     </html>
   );

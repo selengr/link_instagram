@@ -13,6 +13,8 @@ const Post = () => {
     { images: "/images/fikeus-west-2.avif", slug: 4,name:"4nop" },
     { images: "/images/fikeus-west-2.avif", slug: 5,name:"5nop" },
     { images: "/images/fikeus-west-2.avif", slug: 6,name:"6nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 7,name:"6nop" },
+    { images: "/images/fikeus-west-2.avif", slug: 8,name:"6nop" },
   ];
 
 useEffect(()=>{

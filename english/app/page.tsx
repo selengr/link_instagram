@@ -4,6 +4,8 @@ import Bio from "@/components/banner/bio";
 import "../styles/globals.css";
 import Post from "@/components/banner/post";
 import styles from "../styles/components/banner/banner.module.css"
+import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Page() {
@@ -19,6 +21,8 @@ export default function Page() {
               <Post />
       </article>
     </div>
+
+
     </>
   );
 }
