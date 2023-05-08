@@ -17,15 +17,15 @@ const Post = () => {
     { images: "/images/fikeus-west-2.avif", slug: 8,name:"6nop" },
   ];
 
-useEffect(()=>{
-  fetch('http://localhost:8000/api/post/all')
-  .then((res) => res.json())
-  .then((d) => {
-    console.log(d)
-    debugger
-  })
+// useEffect(()=>{
+//   fetch('http://localhost:8000/api/post/all')
+//   .then((res) => res.json())
+//   .then((d) => {
+//     console.log(d)
+//     debugger
+//   })
 
-},[])
+// },[])
 
 
   return (
