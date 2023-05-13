@@ -15,13 +15,11 @@ export default function Page() {
     <>
 
     <div className="w-100 flex justify-center align-middle">
-      <Load />
       <article className={styles["landing-article"]}>
               <Bio />
               <Post />
       </article>
     </div>
-
 
     </>
   );
