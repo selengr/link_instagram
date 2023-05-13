@@ -1,6 +1,11 @@
 import styles from "../../styles/components/blog/blog.module.css";
 
-const MainIdea = () => {
+const MainIdea = (props) => {
+    // if(props?.params?.id === 2 ) return (
+    //     <>
+    //         {fetch("./FIRST.md")}
+    //     </>
+    // )
   return (
     <div className={styles["blog-main-whole"]}>
       <span className={styles["costum-blog-span-italy"]}>

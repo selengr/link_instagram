@@ -6,21 +6,25 @@ import { useParams,useSearchParams } from 'next/navigation'
 import { useRouter, usePathname } from 'next/navigation'
 import MainIdea from '../../../components/blog/mainIdea';
 
-const Post = () => {
+const Post = (props) => {
+     console.log("ppppp",props
+     );
+     let {searchParams, params :{id}} = props
+     
  const param = useParams()
- const userouter = useRouter()
- const {values,getAll,keys} = useSearchParams()
- const {concat} = usePathname()
- console.log('router :>> ', param);
-//  console.log('router =================== :>> ', router);
- debugger
+ // const userouter = useRouter()
+ // const {values,getAll,keys} = useSearchParams()
+ // const {concat} = usePathname()
+ // console.log('router :>> ', param);
+
+
 
   return (
     <>
          
          <div className={styles["blog-page-master"]}>
 
-                <Introduction param={param}/>
+                <Introduction />
            <div className={styles["landing-article"]}>
                 <MainIdea />     
                 {/* <Conclu /> */}
