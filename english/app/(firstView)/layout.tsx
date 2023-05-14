@@ -2,10 +2,10 @@
 
 import Banner from "@/components/banner";
 import Header from "@/components/header";
-import Footer from "./../components/footer";
+import Footer from "../../components/footer";
 // import '../styles/tailwind.css'
 import { useState } from "react";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,12 +20,13 @@ export default function Layout({ children }) {
     }
   };
 
+
   return (
     <html lang="en" data-theme="light">
       <head>
         <title>Next.js</title>
       </head>
-      <body className="relative bg-primary text-primary flex flex-col">
+      <body className="relative bg-primary text-primary flex flex-col" >
         {!darkMode && (
           <div onClick={toggleDarkMode} className="fixed right-16 top-4 z-10">
             <svg
