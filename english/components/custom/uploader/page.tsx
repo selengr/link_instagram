@@ -14,6 +14,7 @@ const UploadForm = (props) => {
                 <div className="w-full">
                     <label htmlFor="cover" className="block text-gray-700 font-bold">
                         {props.lable}
+                        <span className={"text-rose-600"}>*</span>
                     </label>
                     <ImageUploader
                         withIcon={true}
@@ -23,7 +24,7 @@ const UploadForm = (props) => {
                         maxFileSize={5242880}
                         withPreview={true}
                         singleImage={true}
-                        name="cover"
+                        name={props.lable}
                         label=""
                         buttonClassName="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  rounded focus:outline-none focus:shadow-outline mt-2"
                         errorClass="text-red-600"
