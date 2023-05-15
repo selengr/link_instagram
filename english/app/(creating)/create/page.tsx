@@ -81,21 +81,20 @@ const CreatePost = () => {
                     console.log(err)
                 })
 
-
         } catch (error) {
             console.error(error);
         }
     };
+
 
     return (
         <>
 
             <div className={"mt-5"} />
 
-            <div className="max-w-3xl mx-auto py-12">
+            <div className="max-w-3xl mx-auto py-12 px-6">
                 <h1 className="text-3xl font-bold mb-8 overflow-hidden">Create a New Post</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
-
 
 
                     <div>
