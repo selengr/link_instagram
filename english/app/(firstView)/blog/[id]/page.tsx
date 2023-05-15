@@ -5,6 +5,7 @@ import styles from "../../../../styles/components/blog/blog.module.css"
 import { useParams,useSearchParams } from 'next/navigation'
 import { useRouter, usePathname } from 'next/navigation'
 import MainIdea from '../../../../components/blog/mainIdea';
+import Conclusion from "../../../../components/blog/conclusion";
 
 const Post = (props) => {
      console.log("ppppp",props
@@ -27,7 +28,7 @@ const Post = (props) => {
                 <Introduction />
            <div className={styles["landing-article"]}>
                 <MainIdea />     
-                {/* <Conclu /> */}
+                 <Conclusion />
            </div>
 
          </div>
