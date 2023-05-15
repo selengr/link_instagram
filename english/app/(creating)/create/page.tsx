@@ -56,15 +56,14 @@ const CreatePost = () => {
         console.log(data)
         try {
             let mydata = new FormData();
-            mydata.append('title' , title);
-            mydata.append('introduction' , introduction);
+            mydata.append('title' , data?.title);
+            mydata.append('introduction' , data?.introduction);
             mydata.append('cover' , pictures[1] as File);
             mydata.append('banner' , pictures[0] as File);
-            mydata.append('main_idea' , mainIdea);
-            mydata.append('extraInformation' , extraInformation);
-            mydata.append('conclusion' , conclusion);
-            mydata.append('information' , 'reza info');
-
+            mydata.append('main_idea' , data?.mainIdea);
+            mydata.append('extraInformation' , data?.extraInformation);
+            mydata.append('conclusion' , data?.conclusion);
+            mydata.append('information' , data?.information);
 
             const config ={
                 method:'post' ,
@@ -81,7 +80,6 @@ const CreatePost = () => {
                 .catch((err)=>{
                     console.log(err)
                 })
-
 
 
         } catch (error) {
