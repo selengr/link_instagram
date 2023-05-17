@@ -13,7 +13,7 @@ const Introduction = ({param}) => {
       </div>
 
       <span className={styles["post-blog-property-date"]}>Mar 7, 2018</span>
-      <span className={styles["post-blog-property-name"]}>{param}</span>
+      {/*<span className={styles["post-blog-property-name"]}>{param}</span>*/}
 
       <hr className={styles["post-blog-propert-underLine"]} />
 

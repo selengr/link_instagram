@@ -1,6 +1,6 @@
 'use client'
 
-import Introduction from '@/components/blog/introduction'
+import Introduction from '../../../../components/blog/introduction'
 import styles from "../../../../styles/components/blog/blog.module.css"
 import { useParams,useSearchParams } from 'next/navigation'
 import { useRouter, usePathname } from 'next/navigation'
@@ -25,7 +25,7 @@ const Post = (props) => {
          
          <div className={styles["blog-page-master"]}>
 
-                <Introduction />
+                <Introduction param={param}/>
            <div className={styles["landing-article"]}>
                 <MainIdea />     
                  <Conclusion />
