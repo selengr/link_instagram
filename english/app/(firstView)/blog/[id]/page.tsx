@@ -1,9 +1,9 @@
 'use client'
 
-import Introduction from '../../../../components/blog/introduction'
-import styles from "../../../../styles/components/blog/blog.module.css"
-import { useParams,useSearchParams } from 'next/navigation'
-import { useRouter, usePathname } from 'next/navigation'
+import Introduction from '../../../../components/blog/introduction';
+import styles from "../../../../styles/components/blog/blog.module.css";
+import { useParams,useSearchParams } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import MainIdea from '../../../../components/blog/mainIdea';
 import Conclusion from "../../../../components/blog/conclusion";
 
@@ -27,7 +27,7 @@ const Post = (props) => {
 
                 <Introduction param={param}/>
            <div className={styles["landing-article"]}>
-                <MainIdea />     
+                <MainIdea />
                  <Conclusion />
            </div>
 
