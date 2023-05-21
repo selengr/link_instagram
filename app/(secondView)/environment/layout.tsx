@@ -2,7 +2,7 @@
 
 import Footer from "../../../components/footer";
 import styles from "../../../styles/components/environment/environment.module.css"
-import "../../../styles/globals.css";
+    import "../../../styles/globals.css";
 
 export default function Layout({ children }) {
 
@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <head>
             <title>tips</title>
         </head>
-        <body className={`${styles["second-layout"]} relative bg-primary text-primary flex flex-col`} >
+        <body className={`${styles["second-layout"]} relative bg-primary text-primary flex flex-col w-full`} >
              {children}
         {/*<Footer />*/}
         </body>

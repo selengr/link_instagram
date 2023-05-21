@@ -1,18 +1,25 @@
 import styles from "../../../styles/components/environment/environment.module.css"
+import "../../../styles/globals.css";
+import Image from "next/image";
 
 
 
 export default function Environment() {
     return (
         <>
-            <div className="w-100 h-100 flex justify-center align-middle">
-                <div>
+            <div className={styles["entry-header-whole"]}>
+                <div className="w-full">
+
+                    <Image
+                        src={"/images/scene.jpg"}
+                        alt="Picture of the author"
+                        width={1000}
+                        height={500}
+                        className={styles["Env--scene"]}
+                    />
 
 
-
-
-
-                    <h1 className={styles["entry-header-h1"]}>http://localhost:3000</h1>
+                       <h1 className={styles["entry-header-h1"]}>To begin with  </h1>
                         <p>
                             <time dateTime="2015-11-03" className={styles["time-publish"]}>
                                 February 24, 2021 by
@@ -23,6 +30,23 @@ export default function Environment() {
                     <botton className={styles["entry-header-btn"]}>
                         Go to practice process
                     </botton>
+
+
+
+
+
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
+                    <div className="mt-20" />
 
 
                     <form className={styles["eapps-form-header"]}>

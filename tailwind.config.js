@@ -16,10 +16,10 @@ module.exports = {
 
       colors: {
         // Add your custom color schemes here
+        primary: '#00ff55',
       }
     },
   },
-
 
 
 
