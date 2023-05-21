@@ -16,8 +16,13 @@ module.exports = {
 
       colors: {
         // Add your custom color schemes here
-        primary: '#00ff55',
-      }
+        'my-color' : '#00ff55',
+      },
+
+      fontFamily: {
+        custom: ["Roboto Mono"," monospace !important"],
+      },
+
     },
   },
 

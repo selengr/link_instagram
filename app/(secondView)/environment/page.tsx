@@ -19,7 +19,7 @@ export default function Environment() {
                     />
 
 
-                       <h1 className={styles["entry-header-h1"]}>To begin with  </h1>
+                       <h1 className={`${styles["entry-header-h1"]} font-custom `}>To begin with  </h1>
                         <p>
                             <time dateTime="2015-11-03" className={styles["time-publish"]}>
                                 February 24, 2021 by
@@ -32,21 +32,102 @@ export default function Environment() {
                     </botton>
 
 
+             <div>
+             </div>
+
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
+
+
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
+
+
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
 
 
 
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
-                    <div className="mt-20" />
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
+
+
+
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
+
+
+
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
+
+
+                    <div className="w-full flex mt-10 flex-col items-start">
+
+                        <h1 className="text-my-color font-custom text-4xl overflow-hidden mb-2">To begin with </h1>
+                        <span className=" font-custom text-lg">
+                                development tool for testing if your PHP site is running.
+                                Point website visitors to localhost instead and you will see what it looks like
+                                if they do not have your page cached. Useful for testing changes and making sure
+                                that things still work in network interface hardware.
+                        </span>
+                    </div>
+
+
+                 <br />
+                 <br />
+                 <br />
+                 <hr />
+                 <hr />
+                 <hr />
 
 
                     <form className={styles["eapps-form-header"]}>
@@ -59,14 +140,14 @@ export default function Environment() {
                                </svg>
 
                            </div>
-                           <div>
+                           <div  className={styles["eapps-form-fix"]}>
                                <h1 className={styles["eapps-form-header-title"]}>
                                    You need support?
                                </h1>
                                <span className={styles["eapps-form-header-span"]}>Leave your message and we'll get back to you shortly.</span>
                            </div>
                        </section>
-                        <div>
+                        <div className={styles["eapps-form-fix"]}>
                             <label className={styles["eapps-form-element-label"]}>
                                 Email address <span className="text-5xl ml-2">*</span>
                             </label>
