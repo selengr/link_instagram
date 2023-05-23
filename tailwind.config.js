@@ -22,7 +22,12 @@ module.exports = {
       fontFamily: {
         custom: ["Roboto Mono"," monospace !important"],
       },
-
+      backgroundColor : {
+        'my-dark' : "hsl(222.2 47.4% 11.2%)",
+      },
+      borderColor : {
+        'my-border' : "hsl(215.4 16.3% 56.9%)",
+      }
     },
   },
 

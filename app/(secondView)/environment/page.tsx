@@ -5,9 +5,21 @@ import Image from "next/image";
 
 
 export default function Environment() {
+
+
+    const handleSubmit = (event) => {
+        event.preventDefault(); // prevent the default form submission behavior
+
+        // get the values of the email and problem description fields
+        const email = event.target.elements["email-address-0"].value;
+        const problemDescription = event.target.elements["describe-your-problem-1"].value;
+
+        // do something with the form data (e.g., send it to a server)
+    }
+
     return (
         <>
-            <div className={styles["entry-header-whole"]}>
+            <div className={styles["entry-header-whole"]} >
                 <div className="w-full">
 
                     <Image
@@ -130,7 +142,7 @@ export default function Environment() {
                  <hr />
 
 
-                    <form className={styles["eapps-form-header"]}>
+                    <form className={styles["eapps-form-header"]} >
                        <section>
                            <div className={styles["eapps-form-header-picture"]}>
                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
@@ -171,7 +183,7 @@ export default function Environment() {
                             >
                             </textarea>
                         </div>
-                        <botton type="submit" className={styles["eapps-form-element-btn"]}>submit</botton>
+                        <button type="submit" className={styles["eapps-form-element-btn"]}>submit</button>
                     </form>
 
                 </div>
