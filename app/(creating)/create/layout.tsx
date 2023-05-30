@@ -3,10 +3,10 @@
 
 import {useState} from "react";
 import "../../../styles/globals.css";
-export const metadata = {
-  title: 'Next.js',
-  description: 'reza ',
-}
+// export const metadata = {
+//   title: 'Next.js',
+//   description: 'reza ',
+// }
 import Header from "@/components/header";
 
 export default function RootLayout({

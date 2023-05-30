@@ -1,6 +1,7 @@
 import styles from "../../../styles/components/environment/environment.module.css"
 import "../../../styles/globals.css";
 import Image from "next/image";
+import Slidein from "../../../components/custom/slidein";
 
 
 
@@ -11,8 +12,8 @@ export default function Environment() {
         event.preventDefault(); // prevent the default form submission behavior
 
         // get the values of the email and problem description fields
-        const email = event.target.elements["email-address-0"].value;
-        const problemDescription = event.target.elements["describe-your-problem-1"].value;
+        // const email = event.target.elements["email-address-0"].value;
+        // const problemDescription = event.target.elements["describe-your-problem-1"].value;
 
         // do something with the form data (e.g., send it to a server)
     }
@@ -20,6 +21,9 @@ export default function Environment() {
     return (
         <>
             <div className={styles["entry-header-whole"]} >
+
+
+
                 <div className="w-full">
 
                     <Image
@@ -39,9 +43,9 @@ export default function Environment() {
                             <span className={styles["entry-header-span"]}> reza karbakhsh </span>
                         </p>
 
-                    <botton className={styles["entry-header-btn"]}>
+                    <button className={styles["entry-header-btn"]}>
                         Go to practice process
-                    </botton>
+                    </button>
 
 
              <div>
@@ -135,8 +139,11 @@ export default function Environment() {
 
 
                  <br />
+
                  <br />
+                    <Slidein />
                  <br />
+
                  <hr />
                  <hr />
                  <hr />
@@ -145,18 +152,18 @@ export default function Environment() {
                     <form className={styles["eapps-form-header"]} >
                        <section>
                            <div className={styles["eapps-form-header-picture"]}>
-                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                               {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                                     stroke="currentColor" className="w-6 h-6">
                                    <path strokeLinecap="round" strokeLinejoin="round"
                                          d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/>
-                               </svg>
+                               </svg> */}
 
                            </div>
                            <div  className={styles["eapps-form-fix"]}>
                                <h1 className={styles["eapps-form-header-title"]}>
                                    You need support?
                                </h1>
-                               <span className={styles["eapps-form-header-span"]}>Leave your message and we'll get back to you shortly.</span>
+                               {/* <span className={styles["eapps-form-header-span"]}>Leave your message and we'll get back to you shortly.</span> */}
                            </div>
                        </section>
                         <div className={styles["eapps-form-fix"]}>
@@ -167,8 +174,9 @@ export default function Environment() {
                             <input
                                 className={styles["eapps-form-element-input-email"]}
                                 name="email-address-0" type="email"
-                                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@domain.com"
-                                required=""
+                                // pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                                placeholder="example@domain.com"
+                                // required=""
                             />
                         </div>
                         <div>
@@ -179,7 +187,7 @@ export default function Environment() {
                             <textarea
                                 className={`${styles["eapps-form-element-input-email"]} ${styles["eapps-form-element-textarea"]}`}
                                       name="describe-your-problem-1" placeholder="Tell us briefly about your needs"
-                                      required=""
+                                    //   required=""
                             >
                             </textarea>
                         </div>

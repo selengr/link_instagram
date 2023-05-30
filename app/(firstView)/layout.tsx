@@ -1,5 +1,5 @@
 "use client";
-
+// 220170000000116190742000
 import Banner from "@/components/banner";
 import Header from "@/components/header";
 import Footer from "../../components/footer";
@@ -24,7 +24,7 @@ export default function Layout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <head>
-        <title>Next.js</title>
+        <title>reza karbakhsh</title>
       </head>
       <body className="relative bg-primary text-primary flex flex-col" >
         {!darkMode && (
@@ -45,6 +45,7 @@ export default function Layout({ children }) {
             </svg>
           </div>
         )}
+        
 
         {darkMode && (
           <div onClick={toggleDarkMode} className="fixed right-16 top-4 z-10">
