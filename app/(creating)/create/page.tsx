@@ -22,30 +22,30 @@ const CreatePost = () => {
     const [pictures, setPictures] = useState<File[]>([]);
 
 
- //    const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
- //        setTitle(event.target.value)
- //    }
- //    const handleIntroductionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
- //        setIntroduction(event.target.value)
- //    }
- //    const handlePoint = (event: React.ChangeEvent<HTMLInputElement>) => {
- //        setPoint(event.target.value)
- //    }
- //     const handleTips = (event: React.ChangeEvent<HTMLInputElement>) => {
- //        setTips(event.target.value)
- //    }
- //    const handleMainIdea = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
- //        setMainIdea(event.target.value)
- //    }
- //    const handleExtraInformation = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
- //        setExtraInformation(event.target.value)
- //    }
- //    const handleConclusion = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
- //        setConclusion(event.target.value)
- //    }
- // const handleInformationChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
- //        setInformation(event.target.value)
- //    }
+    //    const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //        setTitle(event.target.value)
+    //    }
+    //    const handleIntroductionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //        setIntroduction(event.target.value)
+    //    }
+    //    const handlePoint = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //        setPoint(event.target.value)
+    //    }
+    //     const handleTips = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //        setTips(event.target.value)
+    //    }
+    //    const handleMainIdea = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    //        setMainIdea(event.target.value)
+    //    }
+    //    const handleExtraInformation = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    //        setExtraInformation(event.target.value)
+    //    }
+    //    const handleConclusion = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    //        setConclusion(event.target.value)
+    //    }
+    // const handleInformationChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    //        setInformation(event.target.value)
+    //    }
 
     const onDrop = (pictureFiles: File[]) => {
         setPictures([...pictures, ...pictureFiles]);
@@ -56,28 +56,28 @@ const CreatePost = () => {
         console.log(data)
         try {
             let mydata = new FormData();
-            mydata.append('title' , data?.title);
-            mydata.append('introduction' , data?.introduction);
-            mydata.append('cover' , pictures[1] as File);
-            mydata.append('banner' , pictures[0] as File);
-            mydata.append('main_idea' , data?.mainIdea);
-            mydata.append('extraInformation' , data?.extraInformation);
-            mydata.append('conclusion' , data?.conclusion);
-            mydata.append('information' , data?.information);
+            mydata.append('title', data?.title);
+            mydata.append('introduction', data?.introduction);
+            mydata.append('cover', pictures[1] as File);
+            mydata.append('banner', pictures[0] as File);
+            mydata.append('main_idea', data?.mainIdea);
+            mydata.append('extraInformation', data?.extraInformation);
+            mydata.append('conclusion', data?.conclusion);
+            mydata.append('information', data?.information);
 
-            const config ={
-                method:'post' ,
-                url:'http://localhost:8000/api/post/create',
-                data:mydata,
-                headers:{
-                    'Content-Type':'multipart/form-data'
+            const config = {
+                method: 'post',
+                url: 'http://localhost:8000/api/post/create',
+                data: mydata,
+                headers: {
+                    'Content-Type': 'multipart/form-data'
                 }
             }
             axios.request(config)
-                .then((res)=>{
+                .then((res) => {
                     console.log(res)
                 })
-                .catch((err)=>{
+                .catch((err) => {
                     console.log(err)
                 })
 
@@ -107,7 +107,7 @@ const CreatePost = () => {
                             className="border border-gray-400 rounded-lg px-4 py-2 w-full"
                             // value={title}
                             // onChange={handleTitleChange}
-                           {...register("title")}
+                            {...register("title")}
                         />
                     </div>
 
@@ -122,7 +122,7 @@ const CreatePost = () => {
                             className="border border-gray-400 rounded-lg px-4 py-2 w-full"
                             // value={introduction}
                             // onChange={handleIntroductionChange}
-                           {...register("introduction")}
+                            {...register("introduction")}
                         />
                     </div>
 
@@ -139,7 +139,7 @@ const CreatePost = () => {
                             className="border border-gray-400 rounded-lg px-4 py-2 w-full"
                             // value={information}
                             // onChange={handleInformationChange}
-                           {...register("information")}
+                            {...register("information")}
                         />
                     </div>
 
@@ -151,7 +151,7 @@ const CreatePost = () => {
                             className="border border-gray-400 rounded-lg px-4 py-2 w-full"
                             // value={point}
                             // onChange={handlePoint}
-                           {...register("point")}
+                            {...register("point")}
                         />
                     </div>
 
@@ -163,7 +163,7 @@ const CreatePost = () => {
                             className="border border-gray-400 rounded-lg px-4 py-2 w-full"
                             // value={tips}
                             // onChange={handleTips}
-                           {...register("tips")}
+                            {...register("tips")}
                         />
                     </div>
 
@@ -178,8 +178,8 @@ const CreatePost = () => {
                             rows={3}
                             className="shadow w[100%] appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             placeholder="Enter the main idea of your post"
-                           {...register("mainIdea")}
-                            // onChange={handleMainIdea}
+                            {...register("mainIdea")}
+                        // onChange={handleMainIdea}
                         ></textarea>
 
                     </div>
@@ -196,8 +196,8 @@ const CreatePost = () => {
                             rows={3}
                             className="shadow w[100%] appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             placeholder="Enter the main idea of your post"
-                           {...register("extraInformation")}
-                            // onChange={handleExtraInformation}
+                            {...register("extraInformation")}
+                        // onChange={handleExtraInformation}
                         ></textarea>
 
                     </div>
@@ -214,8 +214,8 @@ const CreatePost = () => {
                             rows={3}
                             className="shadow w[100%] appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             placeholder="Enter the main idea of your post"
-                           {...register("conclusion")}
-                            // onChange={handleConclusion}
+                            {...register("conclusion")}
+                        // onChange={handleConclusion}
                         ></textarea>
 
                     </div>
@@ -230,6 +230,15 @@ const CreatePost = () => {
                             Create Post
                         </button>
                     </div>
+
+
+
+
+                    <div className="underline-container">
+  <h1 className="test">READY TO START</h1>
+  <div className="light"></div>
+</div>
+
 
 
                 </form>
