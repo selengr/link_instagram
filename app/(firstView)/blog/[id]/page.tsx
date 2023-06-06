@@ -6,6 +6,7 @@ import { useParams,useSearchParams } from 'next/navigation';
 import { useRouter, usePathname } from 'next/navigation';
 import MainIdea from '../../../../components/blog/mainIdea';
 import Conclusion from "../../../../components/blog/conclusion";
+import Code from "../../../../components/custom/code";
 
 const Post = (props) => {
      console.log("ppppp",props
@@ -30,6 +31,10 @@ const Post = (props) => {
                 <MainIdea />
                  <Conclusion />
            </div>
+
+
+
+             <Code/>
 
          </div>
     </>
