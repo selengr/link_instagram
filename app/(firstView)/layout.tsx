@@ -6,6 +6,7 @@ import Footer from "../../components/footer";
 // import '../styles/tailwind.css'
 import { useState } from "react";
 import "../../styles/globals.css";
+import { HeroHeader } from "@/components/custom/hero-header";
 
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -56,6 +57,8 @@ export default function Layout({ children }) {
           </div>
         )}
 
+
+        {/* <HeroHeader /> */}
         <Header />
         <Banner />
         {children}
