@@ -5,14 +5,14 @@ import { HeroHeader } from "../custom/hero-header";
 
 
 const Banner = ({data}) => {
-  
+  console.log("rr",data)
     return (
         <div className={styles["landing-main"]}>
           {data === "its me" && <div className={`${styles["landing-img"]} z-[-1]`}> <HeroHeader /></div>}
-          {!data === "its me" && 
+          {data !== "its me" && 
               <Image
               // loader={myLoader}
-              src={data}
+              src={"/images/https___s3-us-west-2.avif"}
               alt="Picture of the author"
               width={500}
               height={500}
@@ -31,7 +31,7 @@ const Banner = ({data}) => {
               />
           }
 
-          {!data === "its me" && 
+          {data !== "its me" && 
               <Image
               src={"/images/fikeus-west-2.avif"}
               alt="Picture of the author"
