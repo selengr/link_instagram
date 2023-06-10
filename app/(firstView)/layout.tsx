@@ -8,8 +8,10 @@ import { useState } from "react";
 import "../../styles/globals.css";
 import { HeroHeader } from "@/components/custom/hero-header";
 
-export default function Layout({ children }) {
+
+export default function Layout({ myData , children }) {
   const [darkMode, setDarkMode] = useState(false);
+  console.log("rrrrrrrrrr",myData)
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -59,8 +61,9 @@ export default function Layout({ children }) {
 
 
         {/* <HeroHeader /> */}
+       {/* {myData} */}
         <Header />
-        <Banner />
+        <Banner data={myData} />
         {children}
 
         <Footer />

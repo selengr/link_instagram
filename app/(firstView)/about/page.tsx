@@ -1,20 +1,70 @@
+'use client'
 import Image from "next/image";
+import Layout from "../layout";
+import { HeroHeader } from "@/components/custom/hero-header";
 
-
+const myData = {
+    banner : "/images/https___s3-us-west-2.avif"
+};
 const About = () => {
+
     return (
         <>
-            <div >
-               {/* ddd   */}
+            <Layout myData={"its me"}>
 
+            <div className="flex justify-center items-center flex-col">
+                     {/* Your page content goes here */}
+
+
+
+
+
+                     <h1>hi</h1>
+                     <h1>it is me</h1>
+                     <h1>very soon...</h1>
+                     <h1>winter is comming</h1>
+                     <h1>bla bla bla bla</h1>
+                     <h1>bla bla bla bla</h1>
+                     <h1>bla bla bla bla</h1>
+                     <h1>bla bla bla bla</h1>
+                     <h1>bla bla bla bla</h1>
+                     <h1>bla bla bla bla</h1>
+                     <h1>bla bla bla bla</h1>
+            
+               {/* ddd   */}
                
-                 <label className="ml-2">reza karbakhsh</label>
+               {/* <Image
+                src={mageData.src}
+                alt="Pic"
+                width={1500}
+                height={1000}
+            /> */}
+
             
             </div>
+            </Layout>
 
            
         </>
     );
 }
 
+
+// function getLayout(page, props) {
+//     // Check if the current page is the child page
+//     const isChildPage = page.name === 'About';
+  
+//     // Return only the content defined within the child page component if it's the child page
+//     if (isChildPage) {
+//       return <>{props.children}</>;
+//     }
+  
+//     // Otherwise, return the ParentLayout component
+//     return <Layout {...props}>{props.children}</Layout>;
+//   }
+  
+//   // Attach the getLayout function to the ChildPage component
+//   About.getLayout = getLayout;
+  
+ 
 export default About;

@@ -8,6 +8,13 @@ import MainIdea from '../../../../components/blog/mainIdea';
 import Conclusion from "../../../../components/blog/conclusion";
 import Code from "../../../../components/custom/code";
 
+
+
+
+import Layout from "../../layout";
+
+
+
 const Post = (props) => {
      console.log("ppppp",props
      );
@@ -23,6 +30,8 @@ const Post = (props) => {
 
   return (
     <>
+
+<Layout myData={"/images/https___s3-us-west-2.avif"}>
          
          <div className={styles["blog-page-master"]}>
 
@@ -32,11 +41,11 @@ const Post = (props) => {
                  <Conclusion />
            </div>
 
-
-
              <Code/>
 
          </div>
+
+         </Layout>
     </>
   )
 }
