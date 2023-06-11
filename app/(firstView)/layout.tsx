@@ -1,12 +1,11 @@
 "use client";
 // 220170000000116190742000
-import Banner from "@/components/banner";
-import Header from "@/components/header";
+// import Banner from "@/components/banner";
+// import Header from "@/components/header";
 import Footer from "../../components/footer";
 // import '../styles/tailwind.css'
 import { useState } from "react";
 import "../../styles/globals.css";
-import { HeroHeader } from "@/components/custom/hero-header";
 
 
 export default function Layout({ myData , children }) {
@@ -62,8 +61,7 @@ export default function Layout({ myData , children }) {
 
         {/* <HeroHeader /> */}
        {/* {myData} */}
-        <Header />
-        <Banner data={myData} />
+        
         {children}
 
         <Footer />

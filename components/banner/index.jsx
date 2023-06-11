@@ -8,7 +8,7 @@ const Banner = ({data}) => {
   console.log("rr",data)
     return (
         <div className={styles["landing-main"]}>
-          {data === "its me" && <div className={`${styles["landing-img"]} z-[-1]`}> <HeroHeader /></div>}
+          {data === "its me" && <div className={`${styles["landing-img"]} `}> <HeroHeader /></div>}
           {data !== "its me" && 
               <Image
               // loader={myLoader}

@@ -2,23 +2,22 @@
 import Image from "next/image";
 import Layout from "../layout";
 import { HeroHeader } from "@/components/custom/hero-header";
+import Banner from "@/components/banner";
+import Header from "@/components/header";
 
-const myData = {
-    banner : "/images/https___s3-us-west-2.avif"
-};
+
 const About = () => {
 
     return (
         <>
-            <Layout myData={"its me"}>
+
+            <Header />
+            <Banner data={ "its me"} /> 
 
             <div className="flex justify-center items-center flex-col">
                      {/* Your page content goes here */}
 
-
-
-
-
+                 {/* <HeroHeader /> */}
                      <h1>hi</h1>
                      <h1>it is me</h1>
                      <h1>very soon...</h1>
@@ -42,8 +41,6 @@ const About = () => {
 
             
             </div>
-            </Layout>
-
            
         </>
     );
