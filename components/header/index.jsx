@@ -8,16 +8,18 @@ const Header = () => {
             <div className={styles["landing-top"]}>
                {/* ddd   */}
 
-               <div className=" fixed right-28 flex justify-center align-middle items-center">
+               <div className=" fixed sm:right-28 right-10 flex justify-center align-middle items-center overflow-hidden">
                 
-               <Link href="/about"> <label >About</label></Link>
+               <Link href="/about"
+               className="overflow-hidden"
+               > <label >About</label></Link>
                 
 
-                 <label className="ml-2">Contact</label>
+                 <label className="sm:ml-2 ml-0">Contact</label>
                </div>
 
 
-               <div className="cover-individuals fixed left-12   flex justify-center align-middle items-center">
+               <div className="cover-individuals fixed sm:left-12 left-4 flex justify-center align-middle items-center">
                 <Image
                     src={"/images/loading/Loading-own.gif"}
                     alt="author"
@@ -25,7 +27,7 @@ const Header = () => {
                     height={50}
                     className="rounded-full"
                 />
-                 <label className="ml-2">reza karbakhsh</label>
+                 <label className="sm:ml-2">reza karbakhsh</label>
                </div>
             </div>
 
