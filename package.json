@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "https://postbridge.ir",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -23,6 +23,7 @@
     "eslint-config-next": "13.3.1",
     "formik": "^2.2.9",
     "lucide-react": "^0.221.0",
+    "mongoose": "^7.3.0",
     "navigation": "^6.1.0",
     "next": "13.3.1",
     "node": "18.16.0",
@@ -36,9 +37,14 @@
     "react-hook-form": "^7.43.9",
     "react-images-upload": "^1.2.7",
     "resend": "^0.15.1",
+    "swr": "^2.1.5",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4",
     "universal-cookie": "^4.0.4",
     "yup": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-top-level-await": "^7.14.5",
+    "body-parser": "^1.20.2"
   }
 }

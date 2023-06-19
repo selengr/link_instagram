@@ -4,7 +4,12 @@ const nextConfig = {
   // experimental:{appDir: true}
   experimental: {
     // concurrentFeatures: true
-    appDir: true
+    appDir: true,
+    // webpack: (config) => {
+    //   config.experiments = { ...config.experiments, topLevelAwait: true };
+    //   return config;
+    // },
+    topLevelAwait: true,
   }
    
 }

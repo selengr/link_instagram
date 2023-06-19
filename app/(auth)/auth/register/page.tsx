@@ -11,36 +11,33 @@ import Head from "next/head";
 
 const LoginSchema = Yup.object().shape({
     email: Yup.string().email("Invalid email").required("Required"),
-    usename: Yup.string().required("Required"),
+    username: Yup.string().required("Required"),
     password: Yup.string().required("Required"),
     confirmPassword: Yup.string().required("Required"),
 });
 
 const resend = new Resend('re_123456789');
 
-const Login = () => {
+const Register = () => {
     // const router = useRouter()
     const handleSubmit = async(values) => {
-debugger
-        // resend.sendEmail({
-        //     from: 'reza1997karbakhsh@gmail.com',
-        //     to: 'reza1400karbakhsh@gmail.com',
-        //     subject: 'hello world',
-        //     react: <h1>teeeeeeeeeeeeeeeest</h1>,
-        //   });
+console.log('values :>> ', values);
+        const url = '/api/auth/register';
+
+        const data = values
         
-
-            const response = await fetch('/api/resend', {
-                method: 'POST',
-                body: JSON.stringify({ name:"sheikh", email:"sheikhoo.iran@gmail.com", message:"test" }),
-                headers: { 'Content-Type': 'application/json' }
-              });
+        fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            body: JSON.stringify(data)
+          },
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => console.log('Success:', data))
+        .catch(error => console.error('Error:', error));
         
-              const data = await response.json();
-
-
-        console.log(data);
-
 
     };
 
@@ -98,25 +95,25 @@ debugger
 
 <div className="mb-4">
                                         <label
-                                            htmlFor="usename"
+                                            htmlFor="username"
                                             className="block text-gray-700 font-bold mb-2"
                                         >
-                                            usename
+                                            username
                                         </label>
                                         <Field
-                                            id="usename"
-                                            name="usename"
-                                            type="usename"
-                                            placeholder="usename"
+                                            id="username"
+                                            name="username"
+                                            type="string"
+                                            placeholder="username"
                                             className={`
                                             ${
-                                                errors.usename && touched.usename
+                                                errors.username && touched.username
                                                     ? "border-red-500"
                                                     : "border-gray-300"
                                             } w-full px-3 py-2 placeholder-gray-400 border  rounded-md focus:outline-none  focus:border-my-border  `}
                                         />
                                         <ErrorMessage
-                                            name="usename"
+                                            name="username"
                                             component="div"
                                             className="text-red-500 mt-1 text-sm"
                                         />
@@ -163,7 +160,7 @@ debugger
                                         <Field
                                             id="confirmPassword"
                                             name="confirmPassword"
-                                            type="confirmPassword"
+                                            type="password"
                                             placeholder="confirmPassword"
                                             className={`${
                                                 errors.confirmPassword && touched.confirmPassword
@@ -202,4 +199,4 @@ debugger
     );
 };
 
-export default Login;
+export default Register;

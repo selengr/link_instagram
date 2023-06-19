@@ -56,7 +56,7 @@
 
 import type { NextApiRequest, NextApiResponse } from "next";
 import { WaitlistEmail } from "../../../components/email/waitlist";
-import { resend } from "../../../lib/resend";
+// import { resend } from "../../../lib/resend";
 import nodemailer from "nodemailer"
 
 import { NextResponse } from 'next/server'
